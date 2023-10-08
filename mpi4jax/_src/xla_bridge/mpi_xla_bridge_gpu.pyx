@@ -15,6 +15,14 @@ from mpi4py.libmpi cimport (
 
 from . cimport mpi_xla_bridge
 
+# Config
+
+cdef bint COPY_TO_HOST = False
+
+cpdef void set_copy_to_host(bint enable):
+    global COPY_TO_HOST
+    COPY_TO_HOST = enable
+
 #
 # GPU XLA targets
 #

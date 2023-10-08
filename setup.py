@@ -144,8 +144,8 @@ def get_cuda_info():
 
 # cuda_info = get_cuda_info()
 cuda_info = {"compile": [], "libdirs": [], "libs": []}
-cuda_info["compile"]=['/home/gta/intel_2023.2.0.49397/compiler/2023.2.0/linux/include/sycl']
-cuda_info["libdirs"]=['/home/gta/intel_2023.2.0.49397/compiler/2023.2.0/linux/lib']
+cuda_info["compile"]=['/home/gta/intel_2024.0.0.49524/2024.0/linux/include/sycl']
+cuda_info["libdirs"]=['/home/gta/intel_2024.0.0.49524/2024.0/lib']
 cuda_info["libs"]=['sycl']
 
 # /end Cuda detection

@@ -217,4 +217,4 @@ mpi_scatter_p.def_effectful_abstract_eval(mpi_scatter_abstract_eval)
 
 # assign to the primitive the correct encoder
 mlir.register_lowering(mpi_scatter_p, mpi_scatter_xla_encode_cpu, platform="cpu")
-mlir.register_lowering(mpi_scatter_p, mpi_scatter_xla_encode_gpu, platform="cuda")
+mlir.register_lowering(mpi_scatter_p, mpi_scatter_xla_encode_gpu, platform="xpu")
